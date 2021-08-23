@@ -7,8 +7,8 @@
 
 <!-- PROJECT SHIELDS -->
 
-[![npm](https://img.shields.io/npm/v/react-native-template-gersonrs-template.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gersonrs-template)
-[![npm](https://img.shields.io/npm/dt/react-native-template-gersonrs-template.svg)](https://www.npmjs.com/package/react-native-template-gersonrs-template)
+[![npm](https://img.shields.io/npm/v/react-native-template-gersonrsantos-basic.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gersonrsantos-basic)
+[![npm](https://img.shields.io/npm/dt/react-native-template-gersonrsantos-basic.svg)](https://www.npmjs.com/package/react-native-template-gersonrsantos-basic)
 [![GitHub issues](https://img.shields.io/github/issues-raw/gersonrs/react-native-template-gersonrsantos-basic.svg)](https://github.com/GersonRS/react-native-template-gersonrsantos-basic/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/GersonRS/react-native-template-gersonrsantos-basic.svg?logo=github)](https://github.com/GersonRS/react-native-template-gersonrsantos-basic/commits/master)
 [![GitHub Issues](https://img.shields.io/github/issues/ialexanderbrito/cra-template-alexander-typescript?logo=github)](https://github.com/gersonrs/react-native-template-gersonrsantos-basic/issues)
