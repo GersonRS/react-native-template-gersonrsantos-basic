@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-gersonrsantos-basic",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "Template para projetos em React Native com expo, com Estrutura de Pastas customizada, Estilos Globais, ESLint + Prettier + Babel Plugin Root Import, React Navigation, Reactotron e Axios configurados.",
   "keywords": [
     "react-native",
@@ -51,6 +51,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-root-import": "^6.6.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
