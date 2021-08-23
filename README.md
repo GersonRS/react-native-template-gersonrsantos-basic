@@ -126,7 +126,7 @@ Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
 1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
 
 ```sh
-expo init AwesomeExample --template gersonrsantos-basic
+expo init AwesomeExample --template react-native-template-gersonrsantos-basic
 ```
 
 2. Depois do projeto criado você pode entrar na pasta do seu projeto e executar o comando
