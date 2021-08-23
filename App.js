@@ -1,21 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
+import { AppearanceProvider, Appearance } from 'react-native-appearance';
+import { ThemeProvider } from 'styled-components';
+import { Routes } from './src/routes';
+import usePersistedState from './src/utils/usePersistedState';
+import { themes } from './src/global/styles';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  const [theme, setTheme] = usePersistedState('theme', Appearance.getColorScheme());
+
+	return (
+		<AppearanceProvider>
+			<ThemeProvider theme={theme == 'light' ? themes.Light : {}}>
+				<StatusBar barStyle="light-content" backgroundColor={themes.statusBarColor} />
+				<Routes />
+			</ThemeProvider>
+		</AppearanceProvider>
+	);
+}
