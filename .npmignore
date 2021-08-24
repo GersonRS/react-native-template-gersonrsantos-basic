@@ -1,0 +1,6 @@
+node_modules/
+.expo/
+.vscode/
+.npmignore
+yarn.lock
+package-lock.json
