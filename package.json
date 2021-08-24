@@ -20,6 +20,9 @@
   "author": "Gerson Santos <gersonrodriguessantos8@gmail.com>",
   "license": "MIT",
   "main": "node_modules/expo/AppEntry.js",
+  "publishConfig": {
+    "@gersonrsantos:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
