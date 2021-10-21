@@ -16,7 +16,7 @@ function usePersistedState(key, initialState) {
           return setState(initialState);
         }
       } catch (error) {
-        
+
       }
     }
     getAndSetInitialState()

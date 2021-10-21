@@ -6,13 +6,13 @@ import { Container, Input } from './styles';
 const InputText = ({color}) => {
   return(
     <Container>
-      <Input />
+      <Input color={color} placeholder='Escreva algo aqui!'/>
     </Container>
   );
 }
 
 InputText.propTypes = {
-  color: PropTypes.color
+  color: PropTypes.string
 }
 
 InputText.defaultProps = {

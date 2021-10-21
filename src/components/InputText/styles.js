@@ -7,5 +7,6 @@ export const Container = styled.View`
 `;
 
 export const Input = styled.TextInput`
-
+  padding: 5px;
+  color: ${props => props.color};
 `;
