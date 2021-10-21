@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-gersonrsantos-basic",
-  "version": "3.1.0",
+  "version": "0.0.0-development",
   "description": "Template para projetos em React Native com expo, com Estrutura de Pastas customizada, Estilos Globais, ESLint + Prettier + Babel Plugin Root Import, React Navigation, Reactotron e Axios configurados.",
   "keywords": [
     "react-native",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GersonRS/react-native-template-gersonrsantos-basic.git"
+    "url": "https://github.com/GersonRS/react-native-template-gersonrsantos-basic.git"
   },
   "homepage": "https://github.com/GersonRS/react-native-template-gersonrsantos-basic#readme",
   "author": "Gerson Santos <gersonrodriguessantos8@gmail.com>",
@@ -30,7 +30,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "semantic-release": "semantic-release --branches main"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.15.0",
@@ -69,6 +70,7 @@
     "prettier": "^2.3.2",
     "reactotron-react-native": "^5.0.0",
     "reactotron-redux": "^3.1.3",
-    "reactotron-redux-saga": "^4.2.3"
+    "reactotron-redux-saga": "^4.2.3",
+    "semantic-release": "^18.0.0"
   }
 }

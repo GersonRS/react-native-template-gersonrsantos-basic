@@ -1,23 +1,32 @@
-name: '🚀 publish'
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
 
 on:
   push:
-    branch:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: '*'
 
 jobs:
-  release:
-    name: 🚀 publish
-    runs-on: ubuntu-latest
+  quality:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+        os: [ubuntu-latest, windows-latest]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - name: 📚 checkout
-        uses: actions/checkout@v2.1.1
-      - name: 🟢 node
-        uses: actions/setup-node@v1.4.2
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org
-      - name: 🚀 publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm test
+
+
